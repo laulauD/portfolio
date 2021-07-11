@@ -126,7 +126,7 @@ nav {
   align-items: center;
   font-size: 12pt;
   position: relative;
-  margin-bottom: 20vh;
+  margin-bottom: 25vh;
   h2{
     padding-top: 5%;
     padding-bottom: 1%;
@@ -214,29 +214,15 @@ nav {
   .github:hover {
     color: rgb(255, 255, 255);
   }
-
-
-
-
-
-
-
-
-
-
-
-  @media screen and (max-width: 1400px) { 
-      
-.pres{
-  width: 250px;
-  height: 200px;
-  float: right;
-  margin-top: -140px;
-  font-size: 10pt;
-}
+  @media screen and (max-width: 1400px) {  
+    .pres{
+      width: 250px;
+      height: 200px;
+      float: right;
+      margin-top: -140px;
+      font-size: 10pt;
+    }
   }
-
-
   @media screen and (max-width: 1200px) { 
     .pres{
       width: 150px;
@@ -249,9 +235,6 @@ nav {
       width: 17rem;height: 24rem;margin-top: 5%;font-size: 11pt;
     }
   }
-    
-
-
   @media screen and (max-width: 998.98px) { 
     .card{
       width: 13rem;height: 24rem;margin-top: 3%;font-size: 11pt;
@@ -268,10 +251,10 @@ nav {
     .cv{
       font-size: 16pt;
      }
+     #contact{
+      margin-bottom: 27vh;
+    }
    }
-  
-
-
  @media screen and (max-width: 768px) { 
   .card{
     width: 19rem;height: 24rem;margin-top: 2%;
@@ -355,8 +338,6 @@ nav {
   }
 } 
 
-
-
 @media screen and (max-width: 455px) { 
 .card{
   width: 100%;
@@ -402,13 +383,11 @@ nav {
     display: block;
     font-size: 11pt;
   }
-  
-  
+  #contact{
+    margin-bottom: 25vh;
+  }
 }
   
-
-
-
 @media screen and (max-width: 320px) { 
   nav {
     .liste {
@@ -419,7 +398,7 @@ nav {
       margin-left: 1px;
       font-size: 8pt;
     }
-}
+  }
 
 #me{
   margin: 1px;

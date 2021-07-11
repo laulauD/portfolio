@@ -118,7 +118,7 @@ nav .item a:hover {
   align-items: center;
   font-size: 12pt;
   position: relative;
-  margin-bottom: 20vh;
+  margin-bottom: 25vh;
 }
 #contact h2 {
   padding-top: 5%;
@@ -262,6 +262,10 @@ nav .item a:hover {
   .cv {
     font-size: 16pt;
   }
+
+  #contact {
+    margin-bottom: 27vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .card {
@@ -400,6 +404,10 @@ nav .item a:hover {
     width: 100%;
     display: block;
     font-size: 11pt;
+  }
+
+  #contact {
+    margin-bottom: 25vh;
   }
 }
 @media screen and (max-width: 320px) {

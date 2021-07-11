@@ -1,6 +1,6 @@
 
 <?php
-ini_set("SMTP", "smtp.dewaelelaurine.fr");
+ini_set("SMTP", "autodiscover.dewaelelaurine.fr");
 $to      = 'laulaudewaele@gmail.com';
 $subject = 'Nouveau contact';
 $message = '';
