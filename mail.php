@@ -1,7 +1,7 @@
 
 <?php
 ini_set("SMTP", "smtp.dewaelelaurine.fr");
-$to      = 'laulaudewaele@gmail.fr';
+$to      = 'laulaudewaele@gmail.com';
 $subject = 'Nouveau contact';
 $message = '';
 $headers = 'From: contact@portfolio.com';
