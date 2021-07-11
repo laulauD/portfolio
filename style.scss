@@ -1,0 +1,429 @@
+$black: #3a3f44;
+$white: #f6f8fa;
+$white-true: rgb(255, 255, 255);
+$grey-light: #dee2e6;
+$grey: #ced3d8;
+$grey-dark: #72777c;
+$green: #b7e7ad;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: $white;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  color: $black;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-out;
+   .liste {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+    .item a{
+      margin: 0px 20px;
+      color: $black;
+      text-transform: uppercase;
+      font-size: 15pt;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+     .item a:hover{
+       color: rgba(0, 0, 0, 0.589);
+      }
+}
+
+  .anim-nav {
+    background-color: $green;
+    color: $white;
+    border-bottom: 1px solid $white;
+    z-index: 22;
+  }
+
+  // ME 
+  #me{
+    height: 350px;
+    margin: 25px;
+    padding: 15px;
+  }
+  #me img{
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px #ceebc8;
+    transition: 2s ease;
+  } 
+  #me img:hover{
+    transform:scale(1.3);
+    margin-right: 50px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+.pres{
+  width: 390px;
+  height: 300px;
+  float: right;
+  margin-top: -140px;
+  font-size: 10pt;
+}
+  #trait {
+  border-top: 5px double $green;
+  width :100%;
+  } 
+
+// PROJETS
+
+#work {
+  padding: 2%;
+  height: 98%;
+  background: rgb(59,59,59);
+  background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(115,115,115,1) 100%);
+  // background-color: #696e72;
+}
+#work h2{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  text-decoration: overline;
+}
+#work .card{
+  width: 21rem;height: 25rem;margin-top: 3%;
+  border-radius: 5%;background-color: $white;
+}
+
+// EXPERIENCES 
+
+#xp {
+   height: 100%;
+   padding: 3%;
+   background: rgb(197,223,197);
+   background: linear-gradient(0deg, rgba(197,223,197,1) 0%, rgba(124,136,124,1) 28%, rgba(95,102,95,1) 39%, rgba(59,59,59,1) 53%);
+}
+#xp h2{
+  padding-top: 7%;
+  padding-bottom: 3%;
+  text-decoration: overline;
+}
+
+
+// CONTACT
+
+#contact{
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  background-color: $white;
+  // display: flex;
+  // justify-content: center;
+  align-items: center;
+  font-size: 12pt;
+  position: relative;
+  margin-bottom: 20vh;
+  h2{
+    padding-top: 5%;
+    padding-bottom: 1%;
+    text-decoration: overline;
+  }
+}
+
+.form{
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  display: block;
+  padding: 3%;
+  border-radius: 11px;
+  background-color: $green;
+  input{
+  background-color:$white ;
+  }
+}
+.cv{
+  text-decoration: none;
+  color: $white;
+  transition: 0.7s linear;
+  font-size: 22pt;
+  font-weight: 100;
+}
+.cv:hover{
+      color: $green;
+    }
+
+.footer{
+  height: 210px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20pt;
+  color: $white;
+  background-color: $black;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+.btn{
+  margin: 25px;
+}
+/* Icon Styling */
+.twitter {
+  color: grey;
+  font-size: 25px;
+  padding: 12px;
+  margin: -12px;
+}
+  .twitter:hover {
+    color: #00aced;
+    color: #00aced;
+  }
+
+.linkedin {
+  color: grey;
+  font-size: 25px;
+  padding: 12px;
+  margin: -12px;
+}
+  .linkedin:hover {
+    color: #007bb6;
+  }
+
+.insta {
+  font-size: 25px;
+  color: grey;
+  padding: 12px;
+  margin: -12px;
+}
+  .insta:hover {
+    color: #8a3ab9;
+  }
+
+.github {
+  font-size: 25px;
+  color: grey;
+  padding: 12px;
+  margin: -12px;
+}
+  .github:hover {
+    color: rgb(255, 255, 255);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1400px) { 
+      
+.pres{
+  width: 250px;
+  height: 200px;
+  float: right;
+  margin-top: -140px;
+  font-size: 10pt;
+}
+  }
+
+
+  @media screen and (max-width: 1200px) { 
+    .pres{
+      width: 150px;
+      height: 100px;
+      float: right;
+      margin-top: -140px;
+      font-size: 9pt;
+    }
+    .card{
+      width: 17rem;height: 24rem;margin-top: 5%;font-size: 11pt;
+    }
+  }
+    
+
+
+  @media screen and (max-width: 998.98px) { 
+    .card{
+      width: 13rem;height: 24rem;margin-top: 3%;font-size: 11pt;
+    }
+    .pres{
+      width: 440px;
+      float: none;
+      margin-top: -10px;
+      font-size: 9pt;
+    }
+    #me{
+      margin-top: 5%;
+    }
+    .cv{
+      font-size: 16pt;
+     }
+   }
+  
+
+
+ @media screen and (max-width: 768px) { 
+  .card{
+    width: 19rem;height: 24rem;margin-top: 2%;
+  }
+  
+  nav {
+    .item a{
+      margin: 0px 8px;
+      font-size: 14pt;
+    }
+}
+  #me{
+    height: 280px;
+    margin: 15px;
+    margin-top: 50px;
+    padding: 7px;
+    font-size: 11pt;
+    }
+    #me figure{
+      margin-top: -40px;
+    }
+
+  #me img{
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px #ceebc8;
+    transition: 2s ease;
+    
+  } 
+  #me img:hover{
+    transform:scale(1.1);
+    margin-right: 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .pres{
+    margin-top: -22px;
+  }
+  
+  .footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:0;
+    font-size: 21pt;
+  }
+  /* Mobile-Tablet Icon Styling */
+  .btn{
+    margin: 15px;
+  }
+   .twitter {
+    color: #00aced;
+    font-size: 25px;
+    padding: 12px;
+    margin: -12px;
+  }
+
+  .linkedin {
+    color: #007bb6;
+    font-size: 25px;
+    padding: 12px;
+    margin: -12px;
+  }
+  .insta {
+    font-size: 25px;
+    color: #8a3ab9;
+    padding: 12px;
+    margin: -12px;
+  }
+  .github {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    margin: -12px;
+  }
+  .footer h1{
+    font-size: 15pt;
+    font-weight: 100;
+  }
+} 
+
+
+
+@media screen and (max-width: 455px) { 
+.card{
+  width: 100%;
+}
+nav {
+    .item a{
+      margin: 0px 7px;
+      font-size: 9pt;
+    }
+}
+  #me{
+    height: 250px;
+    margin: 2px;
+    margin-top: 40px;
+    padding: 0px;
+    font-size:8pt;
+    }
+    #me figure{
+      margin-top: -40px;
+    }
+
+  #me img{
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px #ceebc8;
+    transition: 2s ease;
+    margin-left: 10px;
+  } 
+  #me img:hover{
+    transform:scale(1.1);
+    margin-right: 0px;
+    
+  }
+  .pres{
+    width: 97%;
+    float: none;
+    margin-top: -25px;
+    font-size: 8pt;
+  }
+  .footer{
+    height: 222px;
+    width: 100%;
+    display: block;
+    font-size: 11pt;
+  }
+  
+  
+}
+  
+
+
+
+@media screen and (max-width: 320px) { 
+  nav {
+    .liste {
+      align-items: left;
+    }  
+    .item a{
+      width: 20%;
+      margin-left: 1px;
+      font-size: 8pt;
+    }
+}
+
+#me{
+  margin: 1px;
+  font-size:7pt;
+  }
+
+}
