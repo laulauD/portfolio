@@ -1,31 +1,21 @@
-<?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Envoi d'un message par formulaire</title>
+</head>
 
-require "PHPMailer/src/Exception.php";
-require "PHPMailer/src/PHPMailer.php";
-require "PHPMailer/src/SMTP.php";
+<body>
+    <?php
 
-$mail = new PHPMailer;
+        $retour = mail('laulaudewaele@gmail.com', 'Envoi réussie', $_POST['message'], 'From : portfolio');
+        if ($retour) {
+            echo '<p>Votre message a bien été envoyé.</p>';
+        }
 
-
-$mail->From = 'contact@portfolio.com';
-$mail->FromName = 'Contact';
-$mail->addAddress('laulaudewaele@gmail.com');
-
-$mail->isHTML(true);
-
-$mail->Subject = 'Nouveau message !';
-
-if(isset($_POST['submit']) && isset($_POST["message"]) && isset($_POST["usermail"]) && isset($_POST["username"])) {
-    $mail->Body = "Mail : ".htmlspecialchars($_POST["usermail"])." --- Nom : ".htmlspecialchars($_POST["username"])." --- message : ".htmlspecialchars($_POST["message"]) ;
-    if (!$mail->send()) {
-        echo 'Le message n\'a pas été envoyé';
-        echo 'Erreur : ' . $mail->ErrorInfo;
-    } else {
-        echo 'Youpi !! Message envoyé !';
-    }
-}
-header("Location: index.html");
-exit();
-?>
+        header("Location: index.html");
+        exit();
+        
+    ?>
+</body>
+</html>
