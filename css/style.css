@@ -47,6 +47,7 @@ nav .item a:hover {
   height: 350px;
   margin: 25px;
   padding: 15px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 #me img {
@@ -79,6 +80,7 @@ nav .item a:hover {
 #work {
   padding: 2%;
   height: 98%;
+  font-family: "Noto Sans", sans-serif;
   background: #3b3b3b;
   background: linear-gradient(0deg, #3b3b3b 0%, #737373 100%);
 }
@@ -100,8 +102,9 @@ nav .item a:hover {
 #xp {
   height: 100%;
   padding: 3%;
-  background: #c5dfc5;
-  background: linear-gradient(0deg, #c5dfc5 0%, #7c887c 28%, #5f665f 39%, #3b3b3b 53%);
+  font-family: "Noto Sans", sans-serif;
+  background: #b7e7ad;
+  background: linear-gradient(0deg, #c5dfc5 0%, #b6d4b6 25%, #5f665f 39%, #3b3b3b 70%);
 }
 
 #xp h2 {
@@ -119,11 +122,25 @@ nav .item a:hover {
   font-size: 12pt;
   position: relative;
   margin-bottom: 25vh;
+  font-family: "Noto Sans", sans-serif;
 }
 #contact h2 {
   padding-top: 5%;
   padding-bottom: 1%;
   text-decoration: overline;
+}
+
+.colHeight {
+  padding: 1%;
+  background-color: #f6f8fa;
+  height: 100%;
+}
+
+.hob {
+  width: 85px;
+  height: 85px;
+  display: block;
+  margin: auto;
 }
 
 .form {
@@ -169,7 +186,17 @@ nav .item a:hover {
   margin: 25px;
 }
 
-/* Icon Styling */
+.githubLink {
+  font-size: 25px;
+  color: #3a3f44;
+  padding: 12px;
+  margin: -12px;
+}
+
+.githubLink:hover {
+  color: #8ec484;
+}
+
 .twitter {
   color: grey;
   font-size: 25px;
@@ -225,12 +252,21 @@ nav .item a:hover {
   }
 }
 @media screen and (max-width: 1200px) {
+  #me {
+    margin: 12px;
+  }
+
   .pres {
-    width: 150px;
+    width: 790px;
     height: 100px;
-    float: right;
-    margin-top: -140px;
+    float: none;
+    margin-top: -10px;
     font-size: 9pt;
+  }
+
+  #collapseExample .card-body {
+    height: 100%;
+    width: 100%;
   }
 
   .card {
@@ -239,8 +275,64 @@ nav .item a:hover {
     margin-top: 5%;
     font-size: 11pt;
   }
+
+  .colHeight {
+    padding: 1%;
+    height: 100%;
+    width: 120%;
+  }
+  .colHeight h5 {
+    color: #3a3f44;
+    font-size: 13pt;
+    padding-top: 1%;
+  }
+
+  .hob {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #me {
+    height: 450px;
+    margin: 25px;
+  }
+
+  #collapseExample .card-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .pres {
+    width: 80%;
+    height: 60%;
+    float: none;
+    margin-top: -10px;
+  }
 }
 @media screen and (max-width: 998.98px) {
+  .card.border-success.rounded-pill.mb-3.colHeight {
+    height: 100%;
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+  .card.border-success.rounded-pill.mb-3.colHeight h5 {
+    font-size: 10pt;
+  }
+
+  .hob {
+    width: 77px;
+    height: 77px;
+  }
+
+  .passions h3 {
+    color: #f6f8fa;
+  }
+
   .card {
     width: 13rem;
     height: 24rem;
@@ -249,14 +341,13 @@ nav .item a:hover {
   }
 
   .pres {
-    width: 440px;
-    float: none;
     margin-top: -10px;
     font-size: 9pt;
   }
 
   #me {
     margin-top: 5%;
+    height: 500px;
   }
 
   .cv {
@@ -268,10 +359,25 @@ nav .item a:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .passions {
+    margin-top: 45px;
+  }
+
+  .card.border-success.rounded-pill.mb-3.colHeight {
+    height: 100%;
+  }
+  .card.border-success.rounded-pill.mb-3.colHeight h5 {
+    font-size: 12pt;
+  }
+
   .card {
     width: 19rem;
     height: 24rem;
     margin-top: 2%;
+  }
+
+  #work {
+    height: 100%;
   }
 
   nav .item a {
@@ -280,7 +386,7 @@ nav .item a:hover {
   }
 
   #me {
-    height: 280px;
+    height: 450px;
     margin: 15px;
     margin-top: 50px;
     padding: 7px;
@@ -307,6 +413,7 @@ nav .item a:hover {
 
   .pres {
     margin-top: -22px;
+    width: 98%;
   }
 
   .footer {
@@ -362,6 +469,13 @@ nav .item a:hover {
   }
 }
 @media screen and (max-width: 455px) {
+  .card.border-success.rounded-pill.mb-3.colHeight {
+    width: 250px;
+  }
+  .card.border-success.rounded-pill.mb-3.colHeight h5 {
+    font-size: 9pt;
+  }
+
   .card {
     width: 100%;
   }
@@ -372,7 +486,6 @@ nav .item a:hover {
   }
 
   #me {
-    height: 250px;
     margin: 2px;
     margin-top: 40px;
     padding: 0px;
@@ -426,7 +539,12 @@ nav .item a:hover {
 
   #me {
     margin: 1px;
-    font-size: 7pt;
+    font-size: 7.5pt;
+  }
+
+  .passions {
+    margin-top: 1px;
+    margin-bottom: 30px;
   }
 }
 

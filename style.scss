@@ -10,6 +10,8 @@ $green: #b7e7ad;
   margin: 0;
   padding: 0;
 }
+
+
 body{
   background-color: $white;
 }
@@ -54,6 +56,7 @@ nav {
     height: 350px;
     margin: 25px;
     padding: 15px;
+    font-family: 'Noto Sans', sans-serif;
   }
   #me img{
     height: 200px;
@@ -75,6 +78,7 @@ nav {
   margin-top: -140px;
   font-size: 10pt;
 }
+
   #trait {
   border-top: 5px double $green;
   width :100%;
@@ -85,6 +89,7 @@ nav {
 #work {
   padding: 2%;
   height: 98%;
+  font-family: 'Noto Sans', sans-serif;
   background: rgb(59,59,59);
   background: linear-gradient(0deg, rgba(59,59,59,1) 0%, rgba(115,115,115,1) 100%);
   // background-color: #696e72;
@@ -104,9 +109,10 @@ nav {
 #xp {
    height: 100%;
    padding: 3%;
-   background: rgb(197,223,197);
-   background: linear-gradient(0deg, rgba(197,223,197,1) 0%, rgba(124,136,124,1) 28%, rgba(95,102,95,1) 39%, rgba(59,59,59,1) 53%);
-}
+   font-family: 'Noto Sans', sans-serif;
+   background:  #b7e7ad;
+   background: linear-gradient(0deg, rgba(197,223,197,1) 0%, rgb(182, 212, 182) 25%, rgba(95,102,95,1) 39%, rgba(59,59,59,1) 70%);
+} 
 #xp h2{
   padding-top: 7%;
   padding-bottom: 3%;
@@ -127,11 +133,25 @@ nav {
   font-size: 12pt;
   position: relative;
   margin-bottom: 25vh;
+  font-family: 'Noto Sans', sans-serif;
   h2{
     padding-top: 5%;
     padding-bottom: 1%;
     text-decoration: overline;
   }
+}
+
+.colHeight{
+  padding: 1%;
+  background-color: $white;
+  height: 100%;
+}
+
+.hob{
+  width: 85px;
+  height: 85px;
+  display: block;
+  margin: auto;
 }
 
 .form{
@@ -173,7 +193,20 @@ nav {
 .btn{
   margin: 25px;
 }
-/* Icon Styling */
+
+
+// ICONS github projets 
+.githubLink{ 
+  font-size: 25px;
+  color: $black;
+  padding: 12px;
+  margin: -12px;
+}
+  .githubLink:hover {
+    color: #8ec484;
+  }
+
+  // Icons Styling 
 .twitter {
   color: grey;
   font-size: 25px;
@@ -214,6 +247,8 @@ nav {
   .github:hover {
     color: rgb(255, 255, 255);
   }
+
+
   @media screen and (max-width: 1400px) {  
     .pres{
       width: 250px;
@@ -224,29 +259,89 @@ nav {
     }
   }
   @media screen and (max-width: 1200px) { 
+    #me{
+      margin:12px;
+    }
     .pres{
-      width: 150px;
+      width: 790px;
       height: 100px;
-      float: right;
-      margin-top: -140px;
+      float: none;
+      margin-top: -10px;
       font-size: 9pt;
+    }
+    #collapseExample .card-body{
+      height: 100%;
+      width:100%;
     }
     .card{
       width: 17rem;height: 24rem;margin-top: 5%;font-size: 11pt;
     }
+
+    .colHeight{
+      padding: 1%;
+      height: 100%;
+      width: 120%;
+      h5{
+        color:$black;
+        font-size: 13pt;
+        padding-top: 1%;
+      }
+    }
+    
+    .hob{
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: auto;
+    }
+
   }
+
+  @media screen and (max-width: 1100px) { 
+    #me{
+      height: 450px;
+      margin: 25px;
+    }
+    #collapseExample .card-body{
+      height: 100%;
+      width: 100%;
+      margin-top: 1px;
+    }
+    .pres{
+      width: 80%;
+      height: 60%;
+      float: none;
+      margin-top: -10px;
+    }
+  }
+
   @media screen and (max-width: 998.98px) { 
+    .card.border-success.rounded-pill.mb-3.colHeight{
+      height: 100%;
+      width: 400px;
+      display: block;
+      margin: auto;
+      h5{
+        font-size: 10pt;
+      }
+    }
+    .hob{
+      width: 77px;
+      height: 77px;
+    }
+    .passions h3{
+      color: $white;
+    }
     .card{
       width: 13rem;height: 24rem;margin-top: 3%;font-size: 11pt;
     }
     .pres{
-      width: 440px;
-      float: none;
       margin-top: -10px;
       font-size: 9pt;
     }
     #me{
       margin-top: 5%;
+      height: 500px;
     }
     .cv{
       font-size: 16pt;
@@ -256,10 +351,21 @@ nav {
     }
    }
  @media screen and (max-width: 768px) { 
+ .passions{
+  margin-top: 45px;
+ }
+  .card.border-success.rounded-pill.mb-3.colHeight{
+    height: 100%;
+    h5{
+      font-size: 12pt;
+    }
+  }
   .card{
     width: 19rem;height: 24rem;margin-top: 2%;
   }
-  
+  #work{
+    height: 100%;
+  }
   nav {
     .item a{
       margin: 0px 8px;
@@ -267,7 +373,7 @@ nav {
     }
 }
   #me{
-    height: 280px;
+    height: 450px;
     margin: 15px;
     margin-top: 50px;
     padding: 7px;
@@ -292,6 +398,7 @@ nav {
   }
   .pres{
     margin-top: -22px;
+    width: 98%;
   }
   
   .footer{
@@ -342,6 +449,12 @@ nav {
 } 
 
 @media screen and (max-width: 455px) { 
+  .card.border-success.rounded-pill.mb-3.colHeight{
+    width: 250px;
+    h5{
+      font-size: 9pt;
+    }
+  }
 .card{
   width: 100%;
 }
@@ -352,7 +465,7 @@ nav {
     }
 }
   #me{
-    height: 250px;
+  
     margin: 2px;
     margin-top: 40px;
     padding: 0px;
@@ -405,7 +518,11 @@ nav {
 
 #me{
   margin: 1px;
-  font-size:7pt;
+  font-size:7.5pt;
   }
+ .passions{
+   margin-top: 1px;
+   margin-bottom: 30px;
+ }
 
 }

@@ -26,6 +26,6 @@ if(isset($_POST['submit']) && isset($_POST["message"]) && isset($_POST["usermail
         echo 'Youpi !! Message envoyé !';
     }
 }
-//header("Location: index.html");
-//exit();
+header("Location: index.html");
+exit();
 ?>
